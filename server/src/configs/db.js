@@ -1,5 +1,7 @@
 const mongoose = require("mongoose");
 
 const connect = () => {
-  return mongoose.connect(rocess.env.DB);
+  return mongoose.connect(process.env.DB);
 };
+
+module.exports = connect;
